@@ -1,0 +1,147 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2026-10-31T17:05:02Z",
+  "threshold": 80,
+  "exit_code": 0,
+  "warnings": [],
+  "host": {
+    "name": "lab",
+    "kernel": "6.8.0-147-generic",
+    "distro": "Ubuntu 24.04.5 LTS",
+    "uptime": "up 40 minutes"
+  },
+  "cpu": {
+    "cores": 2,
+    "load1": 0.11,
+    "load5": 0.16,
+    "load15": 0.14,
+    "load_per_core": 0.06
+  },
+  "memory": {
+    "total_gb": 3.8,
+    "used_gb": 0.4,
+    "available_gb": 3.4,
+    "swap_used_gb": 0.0,
+    "used_pct": 10.3
+  },
+  "disks": [
+    {
+      "mount": "/",
+      "size": "20G",
+      "used": "2.4G",
+      "used_pct": 12
+    },
+    {
+      "mount": "/boot",
+      "size": "924M",
+      "used": "123M",
+      "used_pct": 15
+    },
+    {
+      "mount": "/boot/efi",
+      "size": "110M",
+      "used": "6.4M",
+      "used_pct": 6
+    }
+  ],
+  "inodes": [
+    {
+      "mount": "/",
+      "used_pct": 5
+    },
+    {
+      "mount": "/boot",
+      "used_pct": 2
+    }
+  ],
+  "processes": {
+    "total": 108,
+    "zombies": 0,
+    "top_cpu": [
+      {
+        "pid": 2402,
+        "cpu_pct": 14.2,
+        "mem_pct": 0.1,
+        "command": "bash"
+      },
+      {
+        "pid": 2282,
+        "cpu_pct": 1.4,
+        "mem_pct": 1.1,
+        "command": "fwupd"
+      },
+      {
+        "pid": 1,
+        "cpu_pct": 0.2,
+        "mem_pct": 0.3,
+        "command": "systemd"
+      },
+      {
+        "pid": 2111,
+        "cpu_pct": 0.1,
+        "mem_pct": 0.0,
+        "command": "kworker/1:3-events"
+      },
+      {
+        "pid": 8,
+        "cpu_pct": 0.0,
+        "mem_pct": 0.0,
+        "command": "kworker/0:0-events"
+      }
+    ],
+    "top_mem": [
+      {
+        "pid": 2282,
+        "cpu_pct": 1.4,
+        "mem_pct": 1.1,
+        "command": "fwupd"
+      },
+      {
+        "pid": 355,
+        "cpu_pct": 0.0,
+        "mem_pct": 0.6,
+        "command": "multipathd"
+      },
+      {
+        "pid": 792,
+        "cpu_pct": 0.0,
+        "mem_pct": 0.5,
+        "command": "unattended-upgr"
+      },
+      {
+        "pid": 309,
+        "cpu_pct": 0.0,
+        "mem_pct": 0.4,
+        "command": "systemd-journal"
+      },
+      {
+        "pid": 713,
+        "cpu_pct": 0.0,
+        "mem_pct": 0.3,
+        "command": "udisksd"
+      }
+    ]
+  },
+  "listeners": [
+    {
+      "address": "0.0.0.0:22",
+      "process": "-"
+    },
+    {
+      "address": "127.0.0.53%lo:53",
+      "process": "-"
+    },
+    {
+      "address": "127.0.0.54:53",
+      "process": "-"
+    },
+    {
+      "address": "[::]:22",
+      "process": "-"
+    }
+  ],
+  "failed_units": [],
+  "logins": [
+    "ubuntu   pts/0        2026-10-31 12:25 (10.0.2.2)"
+  ]
+}
