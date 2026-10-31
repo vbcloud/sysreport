@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Source: https://github.com/vbcloud/sysreport
+# Author: https://github.com/vbcloud
 set -Eeuo pipefail
 
 readonly SCRIPT_NAME="${0##*/}"
