@@ -5,7 +5,7 @@
 ## Quick start
 
 ```bash
-git clone https://github.com/<user>/sysreport && cd sysreport
+git clone https://github.com/vbcloud/sysreport && cd sysreport
 ./sysreport.sh
 ```
 
