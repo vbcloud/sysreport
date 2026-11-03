@@ -172,3 +172,12 @@ JSON output, abbreviated:
 | `examples/report.txt` | Full table output from a real run |
 | `examples/report.json` | Full JSON output from the same host |
 | `README.md` | This file |
+
+## Development
+
+Install the pre-commit hooks once after cloning:
+
+    pip install pre-commit
+    pre-commit install
+
+On Windows with a very new Python, use `py -3.13 -m pip install --user pre-commit` and `py -3.13 -m pre_commit install`. The hooks run ShellCheck, gitleaks and basic file checks on every commit.
