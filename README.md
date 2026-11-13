@@ -25,7 +25,7 @@ NO_COLOR=1 ./sysreport.sh | cat         # plain text; color is also off whenever
 |---|---|
 | `-f, --format table\|json` | Output format (default `table`) |
 | `-o, --output FILE` | Write to FILE instead of stdout |
-| `-t, --threshold N` | Warn above N percent for disk, memory and inodes (default 80) |
+| `-t, --threshold N` | Warn above N percent for disk, memory and inodes (whole number 0-99, default 80) |
 | `-h, --help` | Usage text |
 
 | Exit code | Meaning |

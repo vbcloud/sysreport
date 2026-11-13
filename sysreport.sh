@@ -33,7 +33,7 @@ Usage: $SCRIPT_NAME [OPTIONS]
 Options:
   -f, --format FORMAT     Output format: table|json  (default: table)
   -o, --output FILE       Write to FILE instead of stdout
-  -t, --threshold N       Warn above N percent for disk, memory, inodes, 0-100  (default: 80)
+  -t, --threshold N       Warn above N percent for disk, memory, inodes  (whole number 0-99, default: 80)
   -h, --help              This message
 
 Exit codes: 0 all under threshold, 1 a check exceeded it, 2 usage error
@@ -55,7 +55,7 @@ parse_args() {
   done
   [[ $FORMAT == table || $FORMAT == json ]] || die "format must be table or json, got: $FORMAT"
   [[ $THRESHOLD =~ ^[0-9]+$ ]] || die "threshold must be a whole number, got: $THRESHOLD"
-  (( 10#$THRESHOLD <= 100 )) || die "threshold must be between 0 and 100, got: $THRESHOLD"
+  (( 10#$THRESHOLD < 100 )) || die "threshold must be between 0 and 99, got: $THRESHOLD"
 }
 
 # check_threshold NAME VALUE -- records a warning and sets EXIT_CODE=1 if VALUE > THRESHOLD
